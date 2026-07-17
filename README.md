@@ -12,8 +12,8 @@ Ce projet propose :
 
 ## ✨ Fonctionnalités
 
-- [ ] Découpage d'une chaîne de caractères en tableau de caractères
-- [ ] Traduction d'un caractère latin en morse
+- [x] Découpage d'une chaîne de caractères en tableau de caractères
+- [x] Traduction d'un caractère latin en morse
 - [ ] Encodage d'un texte complet en morse
 - [ ] Traduction d'un caractère morse en latin
 - [ ] Décodage d'un message morse complet
