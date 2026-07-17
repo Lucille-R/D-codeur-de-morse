@@ -37,4 +37,21 @@ const latinToMorse = {
 const translateLatinCharacter = (character) => {
 	return latinToMorse[character];
 };
-console.log(translateLatinCharacter("A"));
+
+// Encodage d'un texte complet en morse (+ en majuscule) :
+const encode = (text) => {
+	// Je mets le texte en maujuscule :
+	const textUpper = text.toUpperCase();
+	// Je découpe mon texte en tableau de caractères :
+	const textCut = getLatinCharacterList(textUpper);
+	// Je récupère mes caractères morse dans un nouveau tableau :
+	const morseCharacterList = textCut.map((character) => {
+		if (character === " ") {
+			return "/";
+		} else {
+			return translateLatinCharacter(character);
+		}
+	});
+	return morseCharacterList;
+};
+console.log(encode("Hello world"))
