@@ -1,3 +1,6 @@
+//=========================== ENCODAGE=============================
+//=================================================================
+
 // Découpage d'une chaîne de caractères en tableau de caractères grâce à split("") :
 const getLatinCharacterList = (text) => {
 	return text.split("");
@@ -54,4 +57,62 @@ const encode = (text) => {
 	});
 	return morseCharacterList;
 };
-console.log(encode("Hello world"))
+
+//=========================== DECODAGE=============================
+//=================================================================
+
+// Dictionnaire Morse to Latin :
+const morseToLatin = {
+  '-': "T",
+  '--': "M",
+  '---': "O",
+  '--.': "G",
+  '--.-': "Q",
+  '--..': "Z",
+  '-.': "N",
+  '-.-': "K",
+  '-.--': "Y",
+  '-.-.': "C",
+  '-..': "D",
+  '-..-': "X",
+  '-...': "B",
+  '.': "E",
+  '.-': "A",
+  '.--': "W",
+  '.---': "J",
+  '.--.': "P",
+  '.-.': "R",
+  '.-..': "L",
+  '..': "I",
+  '..-': "U",
+  '..-.': "F",
+  '...': "S",
+  '...-': "V",
+  '....': "H"
+}
+
+// Découpage d'une chaîne de caractères en tableau de caractères grâce à split(" ") :
+const getMorseCharacterList = (text) => {
+	return text.split(" ");
+};
+
+// Traduction d'un caractère morse en latin :
+const translateMorseCharacter = (character) => {
+	return morseToLatin[character];
+};
+
+// Encodage d'un texte complet en latin :
+const decode = (text) => {
+	// Découpage du texte :
+	const textCut = getMorseCharacterList(text);
+	// Récupération des caractères latin dans un nouveau :
+	const latinCharacterList = textCut.map((character) => {
+		if (character === "/") {
+			return " ";
+		} else {
+			return translateMorseCharacter(character);
+		}
+	});
+	return latinCharacterList.join("");
+};
+console.log(decode(".... . .-.. .-.. --- / .-- --- .-. .-.. -.."));
