@@ -14,7 +14,7 @@ Ce projet propose :
 
 - [x] Découpage d'une chaîne de caractères en tableau de caractères
 - [x] Traduction d'un caractère latin en morse
-- [ ] Encodage d'un texte complet en morse
+- [x] Encodage d'un texte complet en morse
 - [ ] Traduction d'un caractère morse en latin
 - [ ] Décodage d'un message morse complet
 - [ ] Interface utilisateur avec champs de saisie et boutons
