@@ -12,11 +12,11 @@ Ce projet propose :
 
 ## ✨ Fonctionnalités
 
-- [ ] Découpage d'une chaîne de caractères en tableau de caractères
-- [ ] Traduction d'un caractère latin en morse
-- [ ] Encodage d'un texte complet en morse
-- [ ] Traduction d'un caractère morse en latin
-- [ ] Décodage d'un message morse complet
+- [x] Découpage d'une chaîne de caractères en tableau de caractères
+- [x] Traduction d'un caractère latin en morse
+- [x] Encodage d'un texte complet en morse
+- [x] Traduction d'un caractère morse en latin
+- [x] Décodage d'un message morse complet
 - [ ] Interface utilisateur avec champs de saisie et boutons
 
 ## 🛠️ Technologies utilisées
