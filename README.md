@@ -17,7 +17,8 @@ Ce projet propose :
 - [x] Encodage d'un texte complet en morse
 - [x] Traduction d'un caractère morse en latin
 - [x] Décodage d'un message morse complet
-- [ ] Interface utilisateur avec champs de saisie et boutons
+- [x] Interface utilisateur avec champs de saisie et boutons
+- [ ] Mise en place du style sur l'interface utilisateur
 
 ## 🛠️ Technologies utilisées
 

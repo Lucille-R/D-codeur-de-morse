@@ -1,3 +1,9 @@
+// Récupération des id pour manipulation du DOM :
+const userText = document.getElementById("userText");
+const encodeBtn = document.getElementById("encodeBtn");
+const decodeBtn = document.getElementById("decodeBtn");
+const result = document.getElementById("result");
+
 //=========================== ENCODAGE=============================
 //=================================================================
 
@@ -55,7 +61,7 @@ const encode = (text) => {
 			return translateLatinCharacter(character);
 		}
 	});
-	return morseCharacterList;
+	return morseCharacterList.join("");
 };
 
 //=========================== DECODAGE=============================
@@ -115,4 +121,18 @@ const decode = (text) => {
 	});
 	return latinCharacterList.join("");
 };
-console.log(decode(".... . .-.. .-.. --- / .-- --- .-. .-.. -.."));
+
+//==================== ECOUTEURS D'EVEMENTS =======================
+//=================================================================
+
+// Click du boutton "Encoder" :
+encodeBtn.addEventListener( 'click', () => {
+	const encodedText = encode(userText.value);
+	result.textContent = encodedText;
+});
+
+// Click du boutton "Décoder" :
+decodeBtn.addEventListener( 'click', () => {
+	const decodedText = decode(userText.value);
+	result.textContent = decodedText;
+});
