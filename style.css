@@ -1,0 +1,119 @@
+/*================== REGLES GENERALES ====================*/
+/*========================================================*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	min-height: 100vh; /*body est un conteneur flex en colonne, avec une hauteur minimale égale à toute la hauteur de l'écran */
+	flex-direction: column;
+	background-color: #9e7e3e;
+}
+
+/*======================= HEADER =========================*/
+/*========================================================*/
+header {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+img {
+	margin: 1rem;
+}
+
+h1 {
+	/* color: #9e7e3e; */
+  	background: radial-gradient(circle, #e8c97a, #9e7e3e);
+  	background-clip: text;
+  	color: transparent;
+	text-align: center;
+	padding : 1rem;
+}
+/*======================== MAIN ==========================*/
+/*========================================================*/
+
+.translator {
+/* 	width: 100%; */
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+	padding: 2%;
+	flex-grow: 1;
+}
+
+input {
+	display : flex;
+	margin: 2%;
+	border: solid 3px black;
+	border-radius: 10px 0;
+	font-size: large; /* 16px */
+	font-weight: bold; /* en gras */
+	text-align: center;
+	padding: 2%;
+}
+
+input::placeholder {
+	text-align: center;
+}
+
+input:focus { /* effet du contour de l'input quand on click dedans pour écrire AJOUTÉ PAR LE NAVIGATEUR pour l'accessibilité (DONC NE PAS SUPPRIMER), modifié ici pour le style */
+	outline: 3px solid #e8c97a;
+	outline-offset: 2px;
+}
+
+.buttons { /* conteneur des 2 buttons */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 2%;
+	padding: 2%;
+}
+
+button {
+	background: radial-gradient(circle, #e8c97a, #9e7e3e);
+  	color: black;
+	font-size: large; /* 16px */
+	font-weight: bold; /* en gras */
+	border: solid 3px black;
+	border-radius: 0 10px;
+	box-shadow: 0 3px 3px black; /* pour eprmettre la réduction ensuite sur le :active (et effet d'enfoncement) */
+	transition: all 0.1s ease; /* propriété (all) durée (0.1s) fonction-de-timing (ease) délai (néant) */
+	padding: 1% 2%;
+}
+
+button:active { /* effet quand on click sur le bouton */
+	transform: translateY(5px); /* déplace le bouton vers la droite */
+	box-shadow: 0 0 0 black;/* réduction du box-shadow initial pour l'effet d'enfoncement*/
+}
+
+#result {
+	border: 2px solid black;
+	padding: 2%;
+	min-height: 3rem;
+	text-align: center;
+	font-size: large; /* 16px */
+	font-weight: bold; /* en gras */
+	margin: 2%;
+	border: solid 3px black;
+	border-radius: 10px 0;
+}
+/*======================= FOOTER =========================*/
+/*========================================================*/
+.footer {
+	background-color: black;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 1%;
+	background: radial-gradient(circle, #e8c97a, #9e7e3e);
+  	background-clip: text;
+  	color: transparent;
+	text-align: center;
+}
