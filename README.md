@@ -3,6 +3,8 @@ Ce projet est un encodeur et décodeur de morse, développé en JavaScript.
 Il permet de traduire du texte en morse, et inversement, via une interface web simple.
 
 ## 📝 Description
+*Kata réalisé dans le cadre de la formation Concepteur Développeur d'Applications à Ada Tech School.*
+
 Le morse est un alphabet codé qui remplace les caractères par des impulsions représentés par des points (`.`) ou des tirets (`-`) suivant si elles sont courtes ou longues.
 
 Ce projet propose :
@@ -70,10 +72,10 @@ Ce projet suit une organisation en branches inspirée de Git Flow :
 - `dev` : branche d'intégration des fonctionnalités
 - `feature/nom-de-la-feature` : une branche par fonctionnalité développée
 
-## 👤 Auteur
+## 👤 Auteure
 
-- **Lucille Richard** — Étudiante chez Ada Tech School
+- **Lucille Richard** - Étudiante chez Ada Tech School
 
 ## 📄 Licence
 
-Projet réalisé dans un cadre pédagogique — Ada Tech School.
+Projet réalisé dans un cadre pédagogique - Ada Tech School.

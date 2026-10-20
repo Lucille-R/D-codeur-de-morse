@@ -81,7 +81,7 @@ button {
 	font-weight: bold; /* en gras */
 	border: solid 3px black;
 	border-radius: 0 10px;
-	box-shadow: 0 3px 3px black; /* pour eprmettre la réduction ensuite sur le :active (et effet d'enfoncement) */
+	box-shadow: 0 3px 3px black; /* pour permettre la réduction ensuite sur le :active (et effet d'enfoncement) */
 	transition: all 0.1s ease; /* propriété (all) durée (0.1s) fonction-de-timing (ease) délai (néant) */
 	padding: 1% 2%;
 }
