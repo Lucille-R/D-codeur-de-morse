@@ -2,6 +2,8 @@
 Ce projet est un encodeur et décodeur de morse, développé en JavaScript.
 Il permet de traduire du texte en morse, et inversement, via une interface web simple.
 
+🔗 **Démo en ligne** : [lucille-r.github.io/D-codeur-de-morse](https://lucille-r.github.io/D-codeur-de-morse/)
+
 ## 📝 Description
 *Kata réalisé dans le cadre de la formation Concepteur Développeur d'Applications à Ada Tech School.*
 
