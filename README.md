@@ -76,7 +76,7 @@ Ce projet suit une organisation en branches inspirée de Git Flow :
 
 ## 👤 Auteure
 
-- **Lucille Richard** · [LinkedIn](https://www.linkedin.com/in/lucille-richard) · Étudiante chez Ada Tech School
+**Lucille Richard** · [LinkedIn](https://www.linkedin.com/in/lucille-richard) · Étudiante chez Ada Tech School
 
 ## 🎓 Contexte
 
